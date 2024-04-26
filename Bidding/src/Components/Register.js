@@ -74,7 +74,7 @@ export default function SignInSide() {
       if (response.data.exists) {
         toast.error("Username already exists!");
       } else {
-        const registerResponse = await axios.post("http://localhost:8081/insert", userData);
+        const registerResponse = await axios.post("http://obs-backend.vercel.app/insert", userData);
         setUsernameExists(false);
         toast.success("User registered successfully!");
         event.target.reset();
