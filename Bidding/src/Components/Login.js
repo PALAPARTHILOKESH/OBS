@@ -31,7 +31,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8081/check', { username, password });
+      const response = await axios.post('hhttp://obs-backend.vercel.app/check', { username, password });
       const responseData = response.data;
 
       if (responseData === 'Login successful' && username !== 'admin') {
