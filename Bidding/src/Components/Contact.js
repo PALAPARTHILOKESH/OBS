@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:8081/submit-form', formData);
+      await axios.post('http://obs-backend.vercel.app/submit-form', formData);
       console.log('Form submitted successfully!');
 
       // Reset form fields after successful submission
