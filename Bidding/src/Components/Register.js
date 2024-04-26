@@ -67,7 +67,7 @@ export default function SignInSide() {
     }
 
     try {
-      const response = await axios.post("http://localhost:8081/checkUsername", {
+      const response = await axios.post("http://obs-backend.vercel.app/checkUsername", {
         username: userData.username,
       });
 
